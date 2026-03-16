@@ -1,0 +1,11 @@
+Database Recommendation
+
+A patient management system in a healthcare startup requires strong data reliability, accuracy, and consistency. In such systems, patient records, prescriptions, medical histories, and billing information must remain correct and synchronized at all times. Because of these requirements, MySQL, a relational database management system, would generally be the better choice compared to MongoDB.
+
+MySQL follows the ACID properties (Atomicity, Consistency, Isolation, Durability). These properties ensure that every transaction is completed fully or not at all, the database always remains in a valid state, and data is not lost even in the event of system failure. In healthcare systems, this is critical because incorrect or inconsistent data can directly impact patient safety. For example, updating a patient’s prescription or medical record must be done reliably without partial updates or data corruption.
+
+On the other hand, MongoDB is designed around the BASE model (Basically Available, Soft state, Eventually consistent). BASE systems prioritize scalability and availability, sometimes allowing temporary inconsistency in data across nodes. While this approach is useful for applications like social media or large-scale content platforms, it may not be ideal for sensitive healthcare data that requires strict consistency.
+
+The CAP theorem also supports choosing MySQL for this use case. In distributed systems, it is only possible to guarantee two of the three properties: Consistency, Availability, and Partition Tolerance. Healthcare applications typically prioritize Consistency and Partition Tolerance (CP) over high availability because accurate medical data is more important than always returning a response.
+
+However, if the system later includes a fraud detection module, the recommendation might partially change. Fraud detection often processes large volumes of semi-structured data such as logs, user behavior patterns, and analytics data. In that case, MongoDB could be useful due to its flexible schema and scalability. A hybrid architecture could therefore be ideal: MySQL for core patient records requiring strong consistency, and MongoDB for large-scale analytical or fraud detection data processing.

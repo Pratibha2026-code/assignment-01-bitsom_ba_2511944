@@ -1,0 +1,50 @@
+[
+  {
+    "product_id": "E101",
+    "name": "Samsung 55 inch Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 54999,
+    "specifications": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "voltage": "220V"
+    },
+    "warranty": {
+      "period": "2 years",
+      "type": "Manufacturer Warranty"
+    },
+    "features": ["Smart TV", "WiFi", "Bluetooth"]
+  },
+
+  {
+    "product_id": "C201",
+    "name": "Men's Casual Cotton Shirt",
+    "category": "Clothing",
+    "brand": "Levis",
+    "price": 1999,
+    "sizes_available": ["S", "M", "L", "XL"],
+    "color_options": ["Blue", "White", "Black"],
+    "material": "100% Cotton",
+    "care_instructions": {
+      "wash": "Machine wash",
+      "dry": "Tumble dry low"
+    }
+  },
+
+  {
+    "product_id": "G301",
+    "name": "Organic Basmati Rice",
+    "category": "Groceries",
+    "brand": "India Gate",
+    "price": 899,
+    "weight": "5kg",
+    "expiry_date": "2027-05-10",
+    "nutritional_info": {
+      "calories": "130 kcal",
+      "protein": "2.7g",
+      "carbohydrates": "28g"
+    },
+    "storage_instructions": "Store in a cool and dry place"
+  }
+]
